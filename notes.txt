@@ -1,0 +1,11 @@
+include linux/init.h and module.h
+
+two static functions
+ 
+
+static int func(void){
+
+return 0;
+}
+
+
