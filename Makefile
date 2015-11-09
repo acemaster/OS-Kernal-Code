@@ -1,4 +1,4 @@
-obj-m += hello.o
+obj-m += param.o
 
 KDIR = /usr/src/linux-headers-3.13.0-67-generic
 

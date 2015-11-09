@@ -29,5 +29,19 @@ clean:
 *insmod hello.ko
 *rmmod hello.ko
 
+Coding 2: parameters
 
+*using linux/moduleparam.h
+*create the variable int param_var
+*register the variable
 
+``` 
+module_param(param_var,int,S_IRUSR);
+
+void display(){
+  printk(KERN_ALERT "TEST: %d",param_var);
+}
+
+```
+*for the array
+module_param_array(param_var,int,NULL,S_IRUSR|S_IWUSR);
