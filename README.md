@@ -1,11 +1,12 @@
-Coding 1
+# Coding 1
 * include linux/init.h and module.h
 
 * two static functions
  
 * print k for printing on kernal printk(KERN_ALERT "String")
 
-```static int func(void){
+```
+static int func(void){
 
 return 0;
 }
@@ -29,7 +30,7 @@ clean:
 * insmod hello.ko
 * rmmod hello.ko
 
-Coding 2: parameters
+# Coding 2: parameters
 
 * using linux/moduleparam.h
 * create the variable int param_var
@@ -47,4 +48,4 @@ void display(){
 module_param_array(param_var,int,NULL,S_IRUSR|S_IWUSR);
 
 
-Coding 3 Creating device file
+# Coding 3 Creating device file
