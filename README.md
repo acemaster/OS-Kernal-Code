@@ -49,3 +49,18 @@ module_param_array(param_var,int,NULL,S_IRUSR|S_IWUSR);
 
 
 # Coding 3 Creating device file
+
+
+* Character devices or block devices
+* character devices: Devices written character by character
+* block devices: reads by block and long time to complete, asynchronous mode
+* First we create a device file -> device driver
+* go to dev dir, all the device files are there
+* create a device file mkmod /dev/myTestDeviceFile c 900 1 900 should be a unique number
+* the devic file will invoke the device driver which communicates with the physical device
+
+
+
+# Coding the device file 
+
+ 
